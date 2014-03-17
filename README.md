@@ -21,3 +21,6 @@
  	- KILLS=Names of be killed in process list when it start to update.
  	- EXECUTE=A executing binary name when it completed update, 
  2. Check example sources in example/client and example/server.
+
+## Screenshot
+![](https://github.com/rageworx/autoupgrader/blob/master/example/screenshot.jpg?raw=true)
