@@ -1,0 +1,178 @@
+# depslib dependency file v1.0
+1395019509 source:d:\gh_prjs\autoupgrader\res\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1361752806 d:\gh_prjs\autoupgrader\res\resource.h
+
+1360126155 source:d:\gh_prjs\autoupgrader\src\base64dcd.cpp
+	<cstdlib>
+	<cstring>
+
+1361514715 source:d:\gh_prjs\autoupgrader\src\cthread.cpp
+	"cthread.h"
+
+1361514715 d:\gh_prjs\autoupgrader\src\cthread.h
+	<windows.h>
+	<process.h>
+
+1362631433 source:d:\gh_prjs\autoupgrader\src\httpparser.cpp
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<vector>
+	<string>
+	"httpparser.h"
+
+1395019045 d:\gh_prjs\autoupgrader\src\httpparser.h
+
+1362631742 source:d:\gh_prjs\autoupgrader\src\httprequest.cpp
+	<windows.h>
+	<winsock2.h>
+	<unistd.h>
+	<fcntl.h>
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"httprequest.h"
+	"sock_port.h"
+
+1362473196 d:\gh_prjs\autoupgrader\src\httprequest.h
+
+1395019164 d:\gh_prjs\autoupgrader\src\sock_port.h
+	<stdarg.h>
+	<cstdio>
+	<Winsock2.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netdb.h>
+	<sys/time.h>
+	<sys/poll.h>
+	<errno.h>
+
+1362539041 source:d:\gh_prjs\autoupgrader\src\main.cpp
+	<windows.h>
+	<tchar.h>
+	"mainwindow.h"
+
+1395025237 d:\gh_prjs\autoupgrader\src\mainwindow.h
+	<vector>
+	<string>
+	"cthread.h"
+
+1395025357 source:d:\gh_prjs\autoupgrader\src\mainwindow.cpp
+	<windows.h>
+	<tchar.h>
+	<time.h>
+	<assert.h>
+	"resource.h"
+	<io.h>
+	<iostream>
+	<fstream>
+	<FL/Fl.H>
+	<FL/Fl_Double_Window.H>
+	<FL/Fl_Box.H>
+	<FL/Fl_Progress.H>
+	"mainwindow.h"
+	"coords.h"
+	"httprequest.h"
+	"httpparser.h"
+	"base64dcd.h"
+	"winproctool.h"
+
+1306173689 d:\projects\fltk130\fl\fl.h
+	<FL/Fl_Cairo.H>
+	"fl_utf8.h"
+	"Enumerations.H"
+
+1294309498 d:\projects\fltk130\fl\fl_cairo.h
+	<FL/Fl_Export.H>
+	<cairo-xlib.h>
+	<cairo-win32.h>
+	<cairo-quartz.h>
+
+1290978399 d:\projects\fltk130\fl\fl_export.h
+
+1302709402 d:\projects\fltk130\fl\fl_utf8.h
+	"Fl_Export.H"
+	"fl_types.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<locale.h>
+	<ctype.h>
+	<wchar.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"Xutf8.h"
+	<X11/Xlocale.h>
+	<X11/Xlib.h>
+	<locale.h>
+
+1290978399 d:\projects\fltk130\fl\fl_types.h
+
+1297117336 d:\projects\fltk130\fl\xutf8.h
+	<X11/X.h>
+	<X11/Xlib.h>
+	<X11/Xlocale.h>
+	<X11/Xutil.h>
+
+1306014959 d:\projects\fltk130\fl\enumerations.h
+	"Fl_Export.H"
+	"fl_types.h"
+
+1290978399 d:\projects\fltk130\fl\fl_double_window.h
+	"Fl_Window.H"
+
+1302903485 d:\projects\fltk130\fl\fl_window.h
+	"Fl_Group.H"
+
+1293890513 d:\projects\fltk130\fl\fl_group.h
+	"Fl_Widget.H"
+
+1303664981 d:\projects\fltk130\fl\fl_widget.h
+	"Enumerations.H"
+	<stdint.h>
+	<stddef.h>
+
+1290978399 d:\projects\fltk130\fl\fl_box.h
+	"Fl_Widget.H"
+
+1295888662 d:\projects\fltk130\fl\fl_progress.h
+	"Fl_Widget.H"
+
+1362545923 d:\gh_prjs\autoupgrader\src\coords.h
+
+1360126005 d:\gh_prjs\autoupgrader\src\base64dcd.h
+
+1395019056 d:\gh_prjs\autoupgrader\src\winproctool.h
+
+1362467029 source:d:\gh_prjs\autoupgrader\src\sock_port.cpp
+	"sock_port.h"
+	<sys/types.h>
+	<sys/timeb.h>
+	<math.h>
+	<assert.h>
+	<assert.h>
+	<winsock2.h>
+	<windows.h>
+
+1316494661 source:d:\gh_prjs\autoupgrader\src\stools.cpp
+	<windows.h>
+	<tchar.h>
+
+1362635445 source:d:\gh_prjs\autoupgrader\src\winproctool.cpp
+	<windows.h>
+	<TlHelp32.h>
+	<tchar.h>
+	<string>
+	"stools.h"
+
+1316494661 d:\gh_prjs\autoupgrader\src\stools.h
+
