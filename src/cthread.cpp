@@ -35,6 +35,7 @@ int CustomThread::Run(void *arg)
    Execute( arg );
    CloseHandle(hThread);
    hThread = NULL;
+   return 0;
 }
 
 void CustomThread::EntryPoint(void *pthis)

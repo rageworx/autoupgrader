@@ -10,6 +10,7 @@
 #include <fstream>
 using namespace std;
 
+#include <FL/platform.H>
 #include <FL/Fl.H>
 #include <FL/Fl_Double_Window.H>
 #include <FL/Fl_Box.H>
@@ -27,7 +28,6 @@ using namespace std;
 #define DEFAULT_FONT_SIZE   12
 #define COPYRIGHT_FONT_SIZE 10
 #define HTTP_BUFFER_SIZE    10 * 1024 * 1024
-
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -661,7 +661,7 @@ void MainWindow::createComponents()
             boxCopyright->box(FL_DOWN_BOX);
             boxCopyright->align( FL_ALIGN_TOP_LEFT | FL_ALIGN_INSIDE );
             boxCopyright->labelsize(COPYRIGHT_FONT_SIZE);
-            boxCopyright->label("Automatic Updater, (C)Copyright 2013 Rageworx freeware.\n"
+            boxCopyright->label("Automatic Updater, (C)Copyright 2013..2023 Raph.K.\n"
                                 "All rights reserved, rageworx@gmail.com");
         }
 
@@ -750,7 +750,8 @@ void MainWindow::OnTimer(void* p)
 
 void MainWindow::Setup()
 {
-
+    // init FLTK thrad lock mechanism by call once.
+    Fl::lock();
 }
 
 void MainWindow::Execute(void* p)
@@ -762,19 +763,22 @@ void MainWindow::Execute(void* p)
         extern HINSTANCE fl_display;
         window->icon((char *)LoadIcon(fl_display, MAKEINTRESOURCE(IDI_ICON_MAIN)));
 
-        window->label("Automatic Upgrader WIN32");
+        window->label("FLTK Automatic Upgrader");
         window->labelsize(DEFAULT_FONT_SIZE);
         window->begin();
 
         createComponents();
 
         window->end();
-        window->show( _argc, _argv );
         window->callback(window_callback);
+        window->show();
+        
+        // wait for exposure ...
+        Fl::wait();
 
-        Fl::add_timeout(0.5f, timer_cb, this);
+        Fl::add_timeout(2.0f, timer_cb, this);
 
-        Fl::scheme("plastic");
+        Fl::scheme("flat");
 
         returnCode = Fl::run();
     }

@@ -212,5 +212,7 @@ int HTTPParser::GetContentSize()
             }
         }
     }
+
+    return 0;
 }
 
